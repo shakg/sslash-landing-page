@@ -1,4 +1,6 @@
-# SslashLp
+# sslash landing page
+
+![Screenshot from 2023-10-30 22-44-36](https://github.com/shakg/sslash-landing-page/assets/76657662/ab6a41ef-dbc5-494e-bdcc-baf33f974cf3)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
