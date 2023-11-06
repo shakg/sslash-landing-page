@@ -1,29 +1,41 @@
-# sslash landing page
+# Website
 
-![Screenshot from 2023-10-30 22-44-36](https://github.com/shakg/sslash-landing-page/assets/76657662/ab6a41ef-dbc5-494e-bdcc-baf33f974cf3)
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+### Installation
 
-## Development server
+```
+$ yarn
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Local Development
 
-## Code scaffolding
+```
+$ yarn start
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+### Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+$ yarn build
+```
 
-## Running unit tests
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Deployment
 
-## Running end-to-end tests
+Using SSH:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+$ USE_SSH=true yarn deploy
+```
 
-## Further help
+Not using SSH:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
