@@ -39,20 +39,12 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/styles.css',
         },
       }),
     ],
@@ -64,9 +56,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'SSLASH',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'sslash image',
           src: 'img/logo.svg',
         },
         items: [
@@ -78,7 +70,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/shakg/sslash',
             label: 'GitHub',
             position: 'right',
           },
@@ -91,25 +83,21 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentation',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Usefull Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Plane Project Management',
+                href: 'https://app.plane.so/sslash',
               },
               {
-                label: 'Discord',
+                label: 'Figma',
                 href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
@@ -122,18 +110,32 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/shakg/sslash',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SSLASH, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  plugins:[
+    async function tailwindPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ]
 };
 
 export default config;
