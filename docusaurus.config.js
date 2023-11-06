@@ -66,9 +66,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Installation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog/hello', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/shakg/sslash',
             label: 'GitHub',
@@ -84,7 +84,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/intro',
+                to: '/docs/Installation/From Binary',
               },
             ],
           },
@@ -97,20 +97,7 @@ const config = {
               },
               {
                 label: 'Figma',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/shakg/sslash',
+                href: 'https://www.figma.com/file/g1YFJYwNFvJCHYEItUJGfQ/sslash?type=design&node-id=0%3A1&mode=design&t=M2axZMDCxKgtOW5F-1',
               },
             ],
           },
