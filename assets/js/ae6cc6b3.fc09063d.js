@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksslash_docs=self.webpackChunksslash_docs||[]).push([[904],{7599:s=>{s.exports=JSON.parse('{"label":"facebook","permalink":"/sslash-landing-page/blog/tags/facebook","allTagsPath":"/sslash-landing-page/blog/tags","count":1,"unlisted":false}')}}]);
