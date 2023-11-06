@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksslash_docs=self.webpackChunksslash_docs||[]).push([[535],{5641:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"hello","permalink":"/sslash-landing-page/blog/hello","unlisted":false}]}')}}]);
