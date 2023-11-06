@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-> Website is live at `https://shakg.github.io/sslash-landing-page/`
+> Website lives [here](https://shakg.github.io/sslash-landing-page/) 
 
 ### Installation
 
